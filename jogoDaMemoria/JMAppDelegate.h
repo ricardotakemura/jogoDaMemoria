@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DJViewController;
+@class JMLoginViewController;
 
-@interface DJAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JMAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) DJViewController *viewController;
+@property (strong, nonatomic) JMLoginViewController *viewController;
 
 @end

@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 Dojo. All rights reserved.
 //
 
-#import "DJAppDelegate.h"
+#import "JMAppDelegate.h"
 
-#import "DJViewController.h"
+#import "JMLoginViewController.h"
 
-@implementation DJAppDelegate
+@implementation JMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.viewController = [[DJViewController alloc] initWithNibName:@"DJViewController" bundle:nil];
+    self.viewController = [[JMLoginViewController alloc] initWithNibName:@"JMLoginViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JMLoginViewController">
+            <connections>
+                <outlet property="txtNomeUsuario" destination="VVF-vG-Fgb" id="8lZ-S3-cKq"/>
+                <outlet property="txtSenha" destination="lZ8-UO-rKU" id="pp5-UX-Jf8"/>
+                <outlet property="view" destination="6" id="Pqa-Mp-T5w"/>
+                <outlet property="vwPrincipal" destination="eUM-Br-Yaa" id="DR0-WC-MS6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eUM-Br-Yaa">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="8HC-BY-BaY">
+                            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </imageView>
+                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="title.png" translatesAutoresizingMaskIntoConstraints="NO" id="K7y-hg-6ls">
+                            <rect key="frame" x="124" y="20" width="321" height="110"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="321" id="2Rl-9M-7Jc"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome do Usuário" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VVF-vG-Fgb">
+                            <rect key="frame" x="164" y="145" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="ji0-Hk-po4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lZ8-UO-rKU">
+                            <rect key="frame" x="164" y="183" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLi-q5-8Hz">
+                            <rect key="frame" x="248" y="221" width="73" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="73" id="YXj-AF-SqE"/>
+                            </constraints>
+                            <state key="normal" title="Iniciar"/>
+                            <connections>
+                                <action selector="btnIniciarOnTouchDown:" destination="-2" eventType="touchDown" id="MqE-6M-4Si"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VVF-vG-Fgb" firstAttribute="centerY" secondItem="eUM-Br-Yaa" secondAttribute="centerY" id="54J-DG-rRp"/>
+                        <constraint firstItem="K7y-hg-6ls" firstAttribute="centerX" secondItem="VVF-vG-Fgb" secondAttribute="centerX" id="6av-P3-qBW"/>
+                        <constraint firstItem="lZ8-UO-rKU" firstAttribute="top" secondItem="VVF-vG-Fgb" secondAttribute="bottom" constant="8" symbolic="YES" id="JJx-9Q-1VI"/>
+                        <constraint firstItem="K7y-hg-6ls" firstAttribute="top" secondItem="eUM-Br-Yaa" secondAttribute="top" constant="20" symbolic="YES" id="Sgt-4j-E4k"/>
+                        <constraint firstItem="VVF-vG-Fgb" firstAttribute="centerX" secondItem="YLi-q5-8Hz" secondAttribute="centerX" id="Sn9-g9-Gon"/>
+                        <constraint firstItem="8HC-BY-BaY" firstAttribute="centerY" secondItem="VVF-vG-Fgb" secondAttribute="centerY" id="dcy-mG-aFd"/>
+                        <constraint firstItem="VVF-vG-Fgb" firstAttribute="trailing" secondItem="lZ8-UO-rKU" secondAttribute="trailing" id="eVx-7n-cb9"/>
+                        <constraint firstItem="VVF-vG-Fgb" firstAttribute="leading" secondItem="lZ8-UO-rKU" secondAttribute="leading" id="eWh-bQ-vDI"/>
+                        <constraint firstItem="YLi-q5-8Hz" firstAttribute="top" secondItem="lZ8-UO-rKU" secondAttribute="bottom" constant="8" symbolic="YES" id="i3Z-0o-pfc"/>
+                        <constraint firstItem="VVF-vG-Fgb" firstAttribute="centerX" secondItem="eUM-Br-Yaa" secondAttribute="centerX" id="pxt-5w-lJ6"/>
+                        <constraint firstItem="K7y-hg-6ls" firstAttribute="centerX" secondItem="8HC-BY-BaY" secondAttribute="centerX" id="qDU-e7-p5X"/>
+                        <constraint firstItem="8HC-BY-BaY" firstAttribute="leading" secondItem="eUM-Br-Yaa" secondAttribute="leading" id="ugT-Hn-IMj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="eUM-Br-Yaa" secondAttribute="centerY" id="54e-j6-oib"/>
+                <constraint firstAttribute="centerX" secondItem="eUM-Br-Yaa" secondAttribute="centerX" id="DgX-Zv-hJl"/>
+                <constraint firstAttribute="bottom" secondItem="eUM-Br-Yaa" secondAttribute="bottom" id="G1A-qX-ytl"/>
+                <constraint firstItem="eUM-Br-Yaa" firstAttribute="top" secondItem="6" secondAttribute="top" id="qUd-kM-ap9"/>
+                <constraint firstItem="eUM-Br-Yaa" firstAttribute="leading" secondItem="6" secondAttribute="leading" id="vv8-0P-rl8"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background.png" width="2" height="320"/>
+        <image name="title.png" width="315" height="110"/>
+    </resources>
+</document>

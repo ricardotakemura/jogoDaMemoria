@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DJAppDelegate.h"
+#import "JMAppDelegate.h"
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DJAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([JMAppDelegate class]));
     }
 }
